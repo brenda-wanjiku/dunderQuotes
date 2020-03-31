@@ -9,12 +9,6 @@ import {Quote} from "../quote"
 export class QuoteDetailsComponent implements OnInit {
   @Input() quote:Quote
 
-  quotes = [
-    new Quote('Life has no meaning', 'Marget Thatcher', 'James Owen'),
-    new Quote('Life has no meaning', 'Marget Thatcher', 'James Owen')
-  ]
-
-
 
   constructor() { }
 

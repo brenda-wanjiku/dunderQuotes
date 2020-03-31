@@ -2,10 +2,10 @@
 <app-quote-details></app-quote-details>
 
 
-</div>
-<button (click)='deleteDiary(i)' class="btn btn-danger" id="delete">Delete</button>
-</div>
-
 <div class="col-md-6">
-    <app-goal-form (emitDiary)="addNewDiary($event)"></app-goal-form>
+    <app-quote-form (publishQuote)="addNewQuote($event)"></app-quote-form>
   </div>
+  <div>
+    <p> {{numberOfLikes}}</p>
+    <button (click)=likeButtonCLick()>Like</button>
+</div>

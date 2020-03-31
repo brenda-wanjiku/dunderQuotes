@@ -7,11 +7,23 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
- quote : Quote
+
+ quotes = [
+  new Quote('Life has no meaning', 'Marget Thatcher', 'James Owen'),
+  new Quote('Life has no meaning', 'Marget Thatcher', 'James Owen')
+]
+ addNewQuote(newPublish){
+   this.quotes.push(newPublish)
+ }
+
+ numberOfLikes : number = 0 
+
+likeButtonCLick () {
+  this.numberOfLikes++;
+}
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
-
