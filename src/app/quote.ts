@@ -1,6 +1,7 @@
 export class Quote {
-    public upvotes:number
-    public downvotes:number
+    public date: Date;
+    public upvotes:number;
+    public downvotes:number;
     public showDetails:boolean;
     constructor (public poem : String,public author : String, public submitBy : String){
     this.upvotes =0;

@@ -1,12 +1,14 @@
 <div class="container-fluid">
 
     <h1>Quotes</h1>
+    <hr>
+    <hr>
     <div class="row">
         <div class="col-md-4 quoteHtml">
             <div *ngFor='let quote of quotes ; let i = index'>
                 <h2>{{quote.poem}}</h2>
                 <app-quote-details *ngIf="quote.showDetails"  [quote]='quote'></app-quote-details>
-                <button class="btn btn-info" (click)='toogleDetails(i)'>Show</button>
+                <button class="btn btn-info" (click)='toogleDetails(i)'>Toggle Details</button>
                 <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
         </div>
         </div>

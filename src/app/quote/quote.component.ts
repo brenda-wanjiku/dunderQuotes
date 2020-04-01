@@ -20,8 +20,8 @@ export class QuoteComponent implements OnInit {
  toogleDetails(index){
   this.quotes[index].showDetails = !this.quotes[index].showDetails;
 }
-deleteQuote(i) {
-  this.quotes.splice(i, 1)
+deleteQuote(index,) {
+  this.quotes.splice(index, 1)
 }
 
 previousNumber:number
