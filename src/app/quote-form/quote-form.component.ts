@@ -7,7 +7,7 @@ import {Quote} from '../quote'
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  @Input()
+  @Input() quote: Quote
 
   newPublish = new Quote ( '', '', '')
   
@@ -24,3 +24,4 @@ export class QuoteFormComponent implements OnInit {
   }
 
 }
+
