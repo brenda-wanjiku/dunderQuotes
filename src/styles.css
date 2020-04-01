@@ -1,2 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Cabin|Cantata+One|Fira+Mono|Ramabhadra|Vidaloka&display=swap');
+ h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+h2  {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+.quoteHtml {
+    margin-right: 50px;
+    font-family: 'Cabin', sans-serif;
+    
+}
+.details h4 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.details {
+    font-size: 20px;
+}
+h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 70px;
+}
+.formEdit{
+    font-size: 25px;
+
+}
+button {
+   margin: 10px;
+   width: 80px;
+}

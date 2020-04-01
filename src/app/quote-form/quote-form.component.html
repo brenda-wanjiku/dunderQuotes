@@ -1,8 +1,8 @@
 <div class="container-fluid">
-    <h2 class="text-center">Add Quote</h2>
+    <h3 class="text-center">Add Quote</h3>
     <hr>
     <form (ngSubmit)='publishQuote()' #quoteForm='ngForm'>
-
+        <div class="jumbotron">
         <div class="form-group">
             <label for="poem">Quote</label>
             <input class="form-control" type="text"  id="poem" [(ngModel)]="newPublish.poem" name="poem"  #quote='ngModel' required>
@@ -17,7 +17,7 @@
                 <label for="submitBy">Submitted by</label>
                 <input class="form-control"  type='text' id="submitBy" [(ngModel)]="newPublish.submitBy" name="submitBy" #submitBy='ngModel' required>
             </div>
-
+        </div>
             <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>

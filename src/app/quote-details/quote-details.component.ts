@@ -18,7 +18,7 @@ export class QuoteDetailsComponent implements OnInit {
   downvoteCLick () {
     this.downvotes ++;
   }
-
+ 
   constructor() { }
 
   ngOnInit(): void {
