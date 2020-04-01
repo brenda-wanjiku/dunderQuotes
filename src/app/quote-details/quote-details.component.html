@@ -1,4 +1,14 @@
 <div class="card-body ">
-
-   
+<p>Author: {{quote.author}}</p>
+<p>Submitted by: {{quote.submitBy}}</p>
+<p>
+    {{upvotes}}
+    <button (click)=upvoteCLick()>Upvote</button>
+  </p>
+  <p>
+    {{downvotes}}
+    <button (click)=downvoteCLick()>Downvote</button> 
+  </p>
 </div>
+
+

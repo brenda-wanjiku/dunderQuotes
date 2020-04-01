@@ -7,8 +7,17 @@ import {Quote} from "../quote"
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Input() quote:Quote []
+  @Input() quote:Quote
 
+  upvotes=0;
+  downvotes=0;
+
+  upvoteCLick() {
+    this.upvotes ++;
+  }
+  downvoteCLick () {
+    this.downvotes ++;
+  }
 
   constructor() { }
 

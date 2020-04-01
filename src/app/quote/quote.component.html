@@ -1,18 +1,18 @@
 <div class="container-fluid">
-    <p>Angora Quotes</p>
 
+    <h1>Angora Quotes</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <div *ngFor='let quote of quotes ; let i = index'>
+                <p>{{quote.poem}}</p>
+                <app-quote-details [quote]='quote'></app-quote-details>
+        </div>
+        </div>
 
-    <div class="col-md-6">
-        <app-quote-form (emitQuote)="addNewQuote($event)"></app-quote-form>
-    </div>
-    <div>
-        <p> {{numberOfLikes}}</p>
-        <button (click)=likeButtonCLick()>Like</button>
+        <div class="col-md-6">
+            <app-quote-form (emitQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+
     </div>
 
-    <div>
-        <app-quote-details></app-quote-details>
-    </div>
-    <div *ngFor='let quote of quotes ; let i = index'>
-    </div>
 </div>

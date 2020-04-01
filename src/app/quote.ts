@@ -1,4 +1,8 @@
 export class Quote {
-    constructor (public quote : String,public author : String, public submitBy : String){
+    public upvotes:number
+    public downvotes:number
+    constructor (public poem : String,public author : String, public submitBy : String){
+    this.upvotes =0;
+    this.downvotes =0;
     }
 }
