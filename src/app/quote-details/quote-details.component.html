@@ -4,9 +4,13 @@
     <h4>Submitted by: </h4>
     <p> {{quote.submitBy}}</p>
     <div>
-        <p>{{upvotes}}</p>
-        <button class="btn btn-info" (click)=upvoteCLick()>Upvote</button>
-        <p>{{downvotes}}</p>
-        <button class="btn btn-info" (click)=downvoteCLick()>Downvote</button>
+        <div>
+            <p>{{upvotes}}</p>
+            <button class="btn btn-info" (click)=upvoteCLick()>Upvote</button>
+        </div>
+        <div>
+            <p>{{downvotes}}</p>
+            <button class="btn btn-info" (click)=downvoteCLick()>Downvote</button>
+        </div>
     </div>
 </div>

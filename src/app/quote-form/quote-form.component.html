@@ -3,6 +3,7 @@
     <hr>
     <form (ngSubmit)='publishQuote()' #quoteForm='ngForm'>
         <div class="jumbotron">
+
         <div class="form-group">
             <label for="poem">Quote</label>
             <input class="form-control" type="text"  id="poem" [(ngModel)]="newPublish.poem" name="poem"  #quote='ngModel' required>
