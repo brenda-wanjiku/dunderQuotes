@@ -11,7 +11,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   upvotes=0;
   downvotes=0;
-  date
+  date = new Date ()
 
   upvoteCLick() {
     this.upvotes ++;

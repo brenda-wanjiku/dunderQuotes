@@ -26,6 +26,7 @@ h2  {
 }
 .details {
     font-size: 20px;
+    text-align: center;
 }
 h3 {
     font-family: 'Cabin', sans-serif;
@@ -41,4 +42,7 @@ button {
   margin-left: 30px;
   justify-self: center;
 
+}
+.votes {
+text-align: center;
 }
