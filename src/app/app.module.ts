@@ -9,6 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HiglightDirective } from './higlight.directive';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HiglightDirective } from './higlight.directive';
     QuoteComponent,
     QuoteFormComponent,
     QuoteDetailsComponent,
-    HiglightDirective
+    HiglightDirective,
+    DatePipe
   ],
   imports: [
     BrowserModule,

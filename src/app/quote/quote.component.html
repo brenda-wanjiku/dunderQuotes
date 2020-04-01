@@ -4,11 +4,7 @@
     <div class="row">
         <div class="col-md-4 quoteHtml">
             <div *ngFor='let quote of quotes ; let i = index'>
-            <h2 appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
-                {{quote.poem}}</h2>
-                <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}
-                </p>
-
+                <h2>{{quote.poem}}</h2>
                 <app-quote-details *ngIf="quote.showDetails"  [quote]='quote'></app-quote-details>
                 <button class="btn btn-info" (click)='toogleDetails(i)'>Show</button>
                 <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
