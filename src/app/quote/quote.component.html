@@ -10,8 +10,8 @@
             <div *ngFor='let quote of quotes ; let i = index'>
                 <h2>{{quote.poem}}</h2>
                 <app-quote-details *ngIf="quote.showDetails"  [quote]='quote'></app-quote-details>
-                <button class="btn btn-info" (click)='toogleDetails(i)'>Toggle Details</button>
-                <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
+                <button class="btn btn-outline-info btn-lg btn-block btnclick" (click)='toogleDetails(i)'>Toggle Details</button>
+                <button class="btn btn-outline-danger btn-lg btn-block btnclick" (click)="deleteQuote(i)">Delete</button>
         </div>
         </div>
     </div>
