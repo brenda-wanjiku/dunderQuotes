@@ -11,13 +11,13 @@ import {NgForm} from '@angular/forms';
 export class QuoteFormComponent implements OnInit {
   @Input() quote: Quote
 
-  newPublish = new Quote ( '', '', '')
+  newPublish = new Quote ( '', '', '', new Date())
   
   @Output() emitQuote = new EventEmitter <Quote> (); 
 
   publishQuote () {
     this.emitQuote.emit (this.newPublish);
-    this.newPublish = new Quote ( '', '', '')
+    this.newPublish = new Quote ( '', '', '', new Date())
   }
 
   constructor() { }

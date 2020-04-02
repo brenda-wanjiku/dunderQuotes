@@ -2,10 +2,8 @@
     <h4>Author: </h4>
     <p>{{quote.author}}</p>
     <h4>Submitted by: </h4>
-    <p> {{quote.submitBy}}</p>
-    <p>{{quote.date | date}} days have passed since the quote was created</p>
-
-
+    <p> {{quote.submitBy}} {{quote.date | date}} ago</p>
+    
     <div class="votes">
         <div>
             <button class="btn btn-outline-secondary btn-lg btn-block btnVotes" (click)=upvoteCLick()>Upvote </button>
@@ -15,6 +13,7 @@
             <button class="btn btn-outline-secondary btn-lg btn-block btnVotes" (click)=downvoteCLick()>Downvote</button>
             <p>{{downvotes}}</p>
         </div>
+      
     </div>
   
 </div>
