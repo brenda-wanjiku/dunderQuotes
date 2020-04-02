@@ -1,0 +1,19 @@
+.buttonSubmit {
+    width: 75%;
+    margin-top: 40px;
+    margin-left: 100px ;
+}
+label{
+    font-family: 'Special Elite', cursive;
+    font-size: 80px;
+}
+h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: 80px;
+}
+label{
+    font-size: 30px;
+}
+button {
+    font-size: 30px;
+}

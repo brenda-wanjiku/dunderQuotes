@@ -1,24 +1,33 @@
-<div class="container-fluid">
-    <h3 class="text-center">Add Quote</h3>
-    <hr>
+<div class="container-fluid form">
     <form (ngSubmit)='publishQuote()' #quoteForm='ngForm'>
+
         <div class="jumbotron">
-
-        <div class="form-group">
-            <label for="poem">Quote</label>
-            <input class="form-control" type="text"  id="poem" [(ngModel)]="newPublish.poem" name="poem"  #quote='ngModel' required>
-        </div>
-
-            <div class="form-group">
-                <label for="author">Author</label>
-                <input class="form-control" type="text" id="author" [(ngModel)]="newPublish.author" name="author" #author='ngModel'required>
+            <h3 class="text-center">Share a Quote..</h3>
+            <div class="form-group row">
+                <label for="poem" class="col-md-4 col-form-label"> Quote</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="poem" [(ngModel)]="newPublish.poem" name="poem"
+                        #quote='ngModel' required>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="submitBy">Submitted by</label>
-                <input class="form-control"  type='text' id="submitBy" [(ngModel)]="newPublish.submitBy" name="submitBy" #submitBy='ngModel' required>
+            <div class="form-group row">
+                <label for="author" class="col-md-4 col-form-label">Author</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="author" [(ngModel)]="newPublish.author" name="author"
+                        #author='ngModel' required>
+                </div>
             </div>
+
+            <div class="form-group row">
+                <label for="submitBy" class="col-md-4 col-form-label">Submitted by</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type='text' id="submitBy" [(ngModel)]="newPublish.submitBy"
+                        name="submitBy" #submitBy='ngModel' required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark  btn-lg btn-block buttonSubmit">Submit</button>
         </div>
-            <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>
