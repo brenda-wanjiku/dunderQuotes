@@ -24,8 +24,9 @@ deleteQuote(index,) {
   this.quotes.splice(index, 1)
 }
 
-previousNumber:number
-lastNumber:number
+initialVote :number
+lastVote :number
+diffVote : number 
 
 
 
