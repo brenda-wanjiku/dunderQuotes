@@ -37,7 +37,7 @@ text-align: center;
 }
 
 #formEdit{
-    background: url(src/assets/img/flower.jpeg);
+    background: url(src/assets/img/watercolor.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }

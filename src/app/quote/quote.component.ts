@@ -14,7 +14,7 @@ export class QuoteComponent implements OnInit {
   new Quote('If you look at what you have in life, you will always have more. If you look at what you do not have in life, you will never have enough.', 'Oprah Winfrey', 'Ashley Kahindi',new Date(2010, 9, 7))
 ]
  addNewQuote(newPublish){
-   this.quotes.push(newPublish)
+   this.quotes.unshift(newPublish)
  }
 
  toogleDetails(index){
