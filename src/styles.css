@@ -1,48 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Cabin|Cantata+One|Fira+Mono|Ramabhadra|Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lekton|Special+Elite&display=swap');
  h1 {
-    font-family: 'Cabin', sans-serif;
-    font-size: 150px;
-    margin-bottom: 100px;
+    font-family: 'Special Elite', cursive;
+    font-size: 120px;
+    margin-bottom: 50px;
     text-align: center;
 }
+h5{
+    font-family: 'Special Elite', cursive; 
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 60px;
+}
 h2  {
-    font-family: 'Cabin', sans-serif;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 40px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    margin-top: 40px;
+    text-align: center;
 }
 .quoteHtml {
     margin-right: 200px;
     font-family: 'Cabin', sans-serif;
     
 }
-.details h4 {
-    font-family: 'Cabin', sans-serif;
-    font-size: 30px;
-    margin-top: 80px;
-    margin-bottom: 50px;
-}
-.details {
-    font-size: 20px;
-    text-align: center;
-}
-h3 {
-    font-family: 'Cabin', sans-serif;
-    font-size: 70px;
-}
-.formEdit{
-    font-size: 25px;
 
-}
-button {
-   margin: 10px;
-   width: 150px;
-  margin-left: 30px;
-  justify-self: center;
 
+.btnclick {
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 70px;
 }
 .votes {
 text-align: center;
 }
+
