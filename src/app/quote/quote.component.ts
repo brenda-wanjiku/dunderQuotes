@@ -9,9 +9,15 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
  quotes: Quote [] = [
-  new Quote('Life is what happens when you are busy making other plans.', ' John Lennon', 'Daniel Kirunde', new Date (2013, 9, 5)),
-  new Quote('The way to get started is to quit talking and begin doing.', 'Walt Disney', 'Jesse James', new Date (2012, 6, 24)),
-  new Quote('If you look at what you have in life, you will always have more. If you look at what you do not have in life, you will never have enough.', 'Oprah Winfrey', 'Ashley Kahindi',new Date(2010, 9, 7))
+  new Quote('Thats what she said.', 'Micheal Scott', 'Martin Waweru',new Date(2010, 4, 7)),
+  new Quote('Bears. Beets. Battlestar Gallactica', 'Jim Halpert', 'Martin Waweru',new Date(2001, 3, 7)),
+  new Quote('You couldnt handle my undivided attention.', 'Dwight Shrute', 'Daniel Kirunde', new Date (2011, 24, 5)),
+  new Quote('If I dont have some cake soon. I might die.', 'Stanley Hudson', 'Jesse James', new Date (2012, 6, 24)),
+  new Quote('I saved a life. My own. Am I a hero? I really can not say, but yes.', 'Oprah Winfrey', 'Ashley Kahindi',new Date(2010, 9, 7)),
+  new Quote('I talk a lot so I have learned to just tune myself out', 'Kelly Kapoor', 'Ben Koi',new Date(2010, 9, 7)),
+  new Quote('Identity theft is not a joke. Jim', 'Dwight Shrute', 'Mercy Kate',new Date(2019, 9, 7)),
+  new Quote('If you pray enough, you can turn yourself into a cat person', 'Angela Kinsey', 'Faith Wanjiru',new Date(1997, 9, 4)),
+  new Quote('I would not miss it for the world. But if something else came up I would definitely not go.', 'Michael Scott', 'Ashley Kahindi',new Date(2002, 9, 7))
 ]
  addNewQuote(newPublish){
    this.quotes.unshift(newPublish)
