@@ -2,11 +2,11 @@ h4 {
     font-family: 'Fredericka the Great', cursive;
     font-size: 40px;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 p {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     font-family: 'Lekton', sans-serif;
     
@@ -14,7 +14,7 @@ p {
 button {
     font-size: 25px;
 }
-.btnVotes {
-    width: 700px;
-    margin-left: 300px;
+.details {
+    background-color:rgba(0,0,0,0) !important;
+
 }

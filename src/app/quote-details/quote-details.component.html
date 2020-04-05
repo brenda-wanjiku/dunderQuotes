@@ -1,19 +1,10 @@
 <div class="card-body details">
-    <h4>Author: </h4>
-    <p>{{quote.author}}</p>
-    <h4>Submitted by: </h4>
-    <p> {{quote.submitBy}} {{quote.date | date}} days ago</p>
-    
-    <div class="votes">
-        <div>
-            <button class="btn btn-outline-secondary btn-lg btn-block btnVotes" (click)=upvoteCLick()>Upvote </button>
-            <p>{{upvotes}}</p>
-        </div>
-        <div>
-            <button class="btn btn-outline-secondary btn-lg btn-block btnVotes" (click)=downvoteCLick()>Downvote</button>
-            <p>{{downvotes}}</p>
-        </div>
-      
+    <div class="card-text">
+        <h4>Author: </h4>
+        <p>{{quote.author}}</p>
+        <h4>Submitted by: </h4>
+        <p> {{quote.submitBy}} {{quote.date | date}} days ago</p>
+
+       
     </div>
-  
 </div>

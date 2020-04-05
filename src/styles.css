@@ -35,9 +35,3 @@ h2  {
 .votes {
 text-align: center;
 }
-
-#formEdit{
-    background: url(src/assets/img/watercolor.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}

@@ -24,11 +24,26 @@ deleteQuote(index,) {
   this.quotes.splice(index, 1)
 }
 
-initialVote :number
-lastVote :number
-diffVote : number 
+count: number; 
+initialNumber: number;  
+finalNumber: number;   
 
+  mostLikes() {
+    this.initialNumber = 0
+    this.finalNumber = 0
+    for(this.count = 0 ; this.count < this.quotes.length; this.count++) {
+      this.finalNumber = this.quotes[this.count].upvotes;
+      if(this.finalNumber > this.initialNumber){this.initialNumber = this.finalNumber}
+    }
+    return  this.initialNumber
+  }
 
+  upvoteCLick(index) {
+    this.quotes[index].upvotes ++;
+  }
+  downvoteCLick (index) {
+    this.quotes[index].downvotes ++;
+  }
 
   constructor() { }
 

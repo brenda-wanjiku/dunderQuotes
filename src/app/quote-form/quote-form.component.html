@@ -2,12 +2,11 @@
     <form (ngSubmit)='publishQuote()' #quoteForm='ngForm' >
 
         <div>
-            <link href ="https://www.ecopetit.cat/wpic/mpic/106-1062769_watercolor-background-hd-wallpapers-water-color-paint-background.jpg" >
             <h3 class="text-center">Share a Quote..</h3>
             <div class="form-group row">
                 <label for="poem" class="col-md-4 col-form-label"> Quote</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="text" id="poem" [(ngModel)]="newPublish.poem" name="poem"
+                    <input class="form-control transparent-input" type="text" id="poem" [(ngModel)]="newPublish.poem" name="poem"
                         #quote='ngModel' required>
                 </div>
             </div>
@@ -15,7 +14,7 @@
             <div class="form-group row">
                 <label for="author" class="col-md-4 col-form-label">Author</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type="text" id="author" [(ngModel)]="newPublish.author" name="author"
+                    <input class="form-control transparent-input" type="text" id="author" [(ngModel)]="newPublish.author" name="author"
                         #author='ngModel' required>
                 </div>
             </div>
@@ -23,7 +22,7 @@
             <div class="form-group row">
                 <label for="submitBy" class="col-md-4 col-form-label">Submitted by</label>
                 <div class="col-sm-10">
-                    <input class="form-control" type='text' id="submitBy" [(ngModel)]="newPublish.submitBy"
+                    <input class="form-control transparent-input" type='text' id="submitBy" [(ngModel)]="newPublish.submitBy"
                         name="submitBy" #submitBy='ngModel' required>
                 </div>
             </div>

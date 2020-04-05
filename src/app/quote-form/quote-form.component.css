@@ -18,3 +18,14 @@ button {
     font-size: 30px;
 }
 
+input.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border: solid;
+ }
+
+form{
+    background: url(src/assets/img/simple.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 100px;
+}

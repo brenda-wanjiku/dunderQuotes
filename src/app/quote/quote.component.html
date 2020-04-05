@@ -8,8 +8,24 @@
         <div class="card">
             <div class="card-body">
             <div *ngFor='let quote of quotes ; let i = index'>
-                <h2>{{quote.poem}}</h2>
+                <h2 class="quote" appHighlight  *ngIf="mostLikes()=== quote.upvotes && quote.upvotes>0">
+                    "{{quote.poem}}"
+                </h2>
+                  <h2 class="quote" *ngIf="mostLikes()!==quote.upvotes || quote.upvotes===0">
+                    "{{quote.poem}}"
+                  </h2>
                 <app-quote-details *ngIf="quote.showDetails"  [quote]='quote'></app-quote-details>
+                <div class="votes">
+                    <div>
+                        <button class="btn btn-outline-secondary btn-lg btn-block btnVotes" (click)=upvoteCLick(i)>Upvote </button>
+                        <p>{{quote.upvotes}}</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-secondary btn-lg btn-block btnVotes" (click)=downvoteCLick(i)>Downvote</button>
+                        <p>{{quote.downvotes}}</p>
+                    </div>
+                  
+                </div>
                 <button class="btn btn-outline-info btn-lg btn-block btnclick" (click)='toogleDetails(i)'>Toggle Details</button>
                 <button class="btn btn-outline-danger btn-lg btn-block btnclick" (click)="deleteQuote(i)">Delete</button>
         </div>

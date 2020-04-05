@@ -9,15 +9,7 @@ import {Quote} from "../quote"
 export class QuoteDetailsComponent implements OnInit {
   @Input() quote:Quote
 
-  upvotes=0;
-  downvotes=0;
-
-  upvoteCLick() {
-    this.upvotes ++;
-  }
-  downvoteCLick () {
-    this.downvotes ++;
-  }
+  
  
   constructor() { }
 
